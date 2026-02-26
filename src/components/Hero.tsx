@@ -36,20 +36,28 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-end">
           {/* Left — Text */}
           <div className="pb-8 lg:pb-16">
-            {/* Brand name — prominent */}
+            {/* Brand name — aesthetic */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.05 }}
-              className="mb-6"
+              className="mb-8"
             >
-              <h2 className="font-[family-name:var(--font-heading)] text-xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight uppercase">
-                E Technology Store
-              </h2>
-              <div className="flex items-center gap-2 mt-2">
-                <span className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse" />
-                <span className="text-white/60 text-sm font-medium">Tienda abierta — Piantini, Santo Domingo</span>
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center">
+                  <span className="font-[family-name:var(--font-heading)] font-bold text-lg sm:text-xl text-white">E</span>
+                </div>
+                <div>
+                  <h2 className="font-[family-name:var(--font-heading)] text-lg sm:text-2xl lg:text-3xl font-bold text-white tracking-tight">
+                    E Technology <span className="text-[#6BA1FF]">Store</span>
+                  </h2>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <span className="w-1.5 h-1.5 bg-[#10B981] rounded-full animate-pulse" />
+                    <span className="text-white/50 text-[11px] sm:text-xs font-[family-name:var(--font-mono)] tracking-wide uppercase">Piantini, Santo Domingo</span>
+                  </div>
+                </div>
               </div>
+              <div className="w-12 h-[2px] bg-gradient-to-r from-[#6BA1FF] to-transparent mt-4 sm:mt-5 rounded-full" />
             </motion.div>
 
             <motion.h1
