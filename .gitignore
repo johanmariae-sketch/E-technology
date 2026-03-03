@@ -1,41 +1,35 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+node_modules/
+.next/
+dist/
+*.tsbuildinfo
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+# Scraped Instagram data (large files, re-downloadable)
+scraper/output/
+e__technologystore/
 
-# testing
-/coverage
+# Instagram media in site (copied by processor, re-generable)
+site/public/instagram/*.jpg
+site/public/instagram/*.jpeg
+site/public/instagram/*.png
+site/public/instagram/*.mp4
+site/public/instagram/*.webp
+!site/public/instagram/.gitkeep
 
-# next.js
-/.next/
-/out/
+# Python
+__pycache__/
+*.pyc
+*.pyo
 
-# production
-/build
+# Env
+.env
+.env.*
 
-# misc
+# OS
 .DS_Store
 *.pem
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
+# Vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+# Instaloader mangled paths
+C：*
